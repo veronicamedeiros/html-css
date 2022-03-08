@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background-color: orangered;
+            padding: 25px;
+        }
+        nav a{
+            background-color: white;
+            border-radius: 5px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        thead{
+            background-color: rgb(205, 203, 207);
+        }
+        tbody > tr:nth-child(2n){
+             background-color: antiquewhite;   
+        }
+        td, th{
+            padding: 20px;
+            border: 1px solid black;
+        }
+        tfoot{
+            background-color: rgb(241, 154, 154);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="">Home</a>
+        <a href="">Epecialidades</a>
+        <a href="">Currículo</a>
+        <a href="">Contato</a>
+    </nav>
+<table>
+    <caption>Tabela de Notas prova de Matemática</caption>
+    <thead>
+        <tr>
+            <th scope="col">Aluno</th>
+            <th scope="col">Nota</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Alice</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Amanda</td>
+            <td>9.8</td>
+        </tr>
+        <tr>
+            <td>Beatriz</td>
+            <td>6.5</td>
+        </tr>
+        <tr>
+            <td>Carolina</td>
+            <td>7.6</td>
+        </tr>
+        <tr>
+            <td>Dora</td>
+            <td>9.4</td>
+        </tr>
+        <tr>
+            <td>Emílio</td>
+            <td>8</td>
+        </tr>
+
+    <tfoot>
+        <th scope="row">Nota da classe</th>
+        <td>00</td>
+    </tfoot>
+    </tbody>
+</table>    
+</body>
+</html>
