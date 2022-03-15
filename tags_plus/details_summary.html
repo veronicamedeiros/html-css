@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags 'details' e 'summary'</title>
+    <style>
+        summary::marker{
+            color: rgb(250, 252, 250);
+        }
+        details[open] summary::marker{
+            color: red;
+        }
+        summary{
+            background-color: grey;
+            color: white;
+            width: 200px;
+            border: 1px solid darkgray;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+        article{
+            background-color: rgb(201, 197, 197);
+            width: 200px;   
+            text-align: center;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            border-radius: 3px 3px 3px;
+        }
+    </style>
+</head>
+<body>
+  <h1>Tags 'details' e 'summary'</h1>  
+  <details>
+      <summary>Cidades participantes</summary>
+      <article>
+          <p>Abadia de Goiás</p>
+          <p>Abaeté</p>
+          <p>Abaré</p>
+          <p>Abreu e Lima</p>
+          <p>Altônia</p>
+      </article>
+      <article>
+        <p>Bacabeira</p>
+        <p>Baldim</p>
+        <p>Belford Roxo</p>
+        <p>Bonfim</p>
+        <p>Borá</p>
+    </article>
+  </details>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis voluptas placeat adipisci asperiores blanditiis velit molestias error saepe sint iusto, voluptates rem nobis? Cupiditate non nihil corrupti facilis nam rem.</p>
+</body>
+</html>

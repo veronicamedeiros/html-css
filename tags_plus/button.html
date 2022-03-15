@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        button{
+            margin-bottom: 40px;
+        }
+        button.escuro{
+            background-image: linear-gradient(to right, grey, rgb(5, 5, 5));
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+        }
+        button.escuro:hover{
+            background-image: linear-gradient(to right, rgb(116, 115, 113), white);
+            color: black;
+            cursor: pointer;
+        }
+        button.claro{
+            background-color: rgb(198, 198, 245);
+            padding: 5px;
+            font-family: Verdana, sans-serif;
+            font-weight: bold;
+            border-radius: 5px;
+            border-color: green;
+        }
+        button.claro:hover{
+            background-color: rgb(227, 231, 173);
+            cursor: pointer;
+        }
+        button.redondo{
+            background-color: brown;
+            color: white;
+            border-radius: 50%;
+            padding: 20px;
+            font-weight: bold;
+        }
+        button.redondo:hover{
+            background-color: rgb(168, 95, 95);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<h1>Button</h1>
+<body>
+    <button type="button" form="f_cadastro" class="escuro">
+        Cursos
+    </button>
+    <button type="button" class="escuro">
+        Grade
+    </button>
+    <br>
+    <button type="button" class="claro">
+        Professores
+    </button>
+    <button type="button" class="claro">
+        Coordenadores
+    </button>
+    <br>
+    <button type="submit" class="redondo">
+        Submeter
+    </button>
+    <button type="reset" class="redondo">
+        Limpar
+    </button>
+</body>
+</html>
