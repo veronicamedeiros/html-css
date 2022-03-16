@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            display: block;
+            margin-bottom: 7px;
+        }
+        div input{
+            margin-top: 7px;
+            margin-right: 8px;
+        }
+        form{
+            background-color: rgb(237, 243, 245);
+            width: 350px;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        div#dv_btns{
+            display: flex;
+        }
+        div#f3 input{
+            display: inline;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178);
+            border-radius: 6px;
+        }
+        div#f3 form{
+            background-color: rgb(216, 235, 214);
+            width: 350px;
+        }
+        div#f3 label{
+            font-size: bold;
+        }
+        div#f4 form{
+            background-color: rgb(0, 0, 0);
+            width: 280px;
+            border-radius: 9px;
+        }
+        div#f4 input{
+            color: rgb(91, 179, 105);
+            box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.281);
+        }
+        div#f4 label{
+            color: rgb(235, 220, 11);
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.301);
+            font-size: 16px;
+            font-weight: bold;
+        }
+        div#f4 input#botaoenviarf4{
+            color: black;
+        }
+        div#f5 form{
+            background-color: rgb(214, 195, 231);
+            width: 450px;
+        }
+        div#f5 input{
+            display: inline;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <form name="f_cadastro" action="#" method="get">
+        <label for="">Nome:</label>
+        <input type="text" name="f_nome" maxlength="25" size="22">
+        <label for="">Idade:</label>
+        <input type="text" name="f_idade" maxlength="3" size="1">
+    </form>
+    <br>
+
+    <form name="f2_cadastro" action="#" method="post">
+        <label for="">Nome</label>
+        <input type="text" name="f2_nome" maxlength="20">
+
+    <div id="dv_btns">
+        <input type="submit" name="f2_btn_enviar" value="Gravar">
+        <input type="reset" name="f2_btn_limpar" value="Limpar">
+        <input type="button" name="f2_btn_nada" value="Nada">
+    </div>
+    </form>
+    <br>
+
+    <div id="f3">
+        <form name="f3_cadastro" action="#" method="post">
+            <label for="">Usuário</label>
+                <input type="text" name="f3_usuario" maxlength="20" size="22">
+    <br>
+            <label for="">Senha</label>
+                <input type="password" name="f3_senha" maxlength="6" size="5">
+    <br>        
+                <input type="submit" name="f3_enviar" value="Enviar">
+        </form>
+    </div>
+    <br>    
+    <div id="f4">
+        <form name="f4_cadastro" action="#" method="post">
+            <label for="">Usuário</label>
+                <input type="text" name="f4_usuario" maxlength="20">
+            <label for="">Senha</label>
+                <input type="password" name="f4_senha" maxlength="8" size="5">
+                <input type="submit" name="f4_enviar" id="botaoenviarf4">
+        </form>
+    </div>
+    <br>
+    <div id="f5">
+        <form name="f5_cadastro" action="#" method="post">
+            <label for="">Selecione os canais abertos assistidos por você:</label>
+        <br>
+                <input type="checkbox" name="cultura">Cultura
+        <br>
+                <input type="checkbox" name="sbt">SBT
+        <br>
+                <input type="checkbox" name="globo">Globo 
+        <br>
+                <input type="checkbox" name="record">Record
+        <br>
+                <input type="checkbox" name="redetv">RedeTV
+        <br>
+                <input type="checkbox" name="band">Band
+        <br>
+                <input type="submit" name="f5_enviar" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

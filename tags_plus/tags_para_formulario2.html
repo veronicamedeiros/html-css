@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            background-color: rgba(240, 238, 238, 0.61);
+            width: 800px;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        label{
+            display: inline-block;  
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-weight: bold;    
+        }
+        input{
+            margin-right: 5px;
+            margin-left: 15px;
+        }
+        #botaoenviar{
+            background-color: white;
+            display: block;
+            padding: 6px;
+            margin: auto;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form name="formulario1" action="#" method="get">
+        <h1>Formulário de Consumo</h1>
+        <label for="">Selecione os produtos de limpeza que costuma comprar:</label>
+    <br>
+            <input type="checkbox" name="sabaoomo">Sabão Omo
+            <input type="checkbox" name="sbaoariel">Sabão Ariel
+            <input type="checkbox" name="detergenteype">Detergente Ypê
+            <input type="checkbox" name="detergenteminuano">Detergente Minuano
+            <input type="checkbox" name="esponja" >Esponja Bombril
+            <br>
+        <label for="">Selecione os produtos de cuidados pessoais que costuma comprar:</label>
+    <br>
+        <input type="checkbox" name="hidratantenivea">Hidratante Nívea
+        <input type="checkbox" name="cremedebarbeargillete">Creme de barbear Gillete
+        <input type="checkbox" name="hidratantedove">Hidratante Dove
+        <input type="checkbox" name="cremeavon">Creme Avon
+    <label for="">Selecione os produtos alimentícios que costuma comprar:</label>
+    <br>
+        <input type="checkbox" name="chocolatenestle">Chocolate Nestle
+        <input type="checkbox" name="sorvetekibom">Sorvete Kibon
+        <input type="checkbox" name="chocolatelaka">Chocolate Laka
+        <input type="checkbox" name="chicletetrident">Chiclete Trident
+    <br> 
+    <label for="">Consome marcas do próprio mercado?</label>
+    <br>
+        <input type="radio" name="f_questao" value="s">Sim
+        <input type="radio" name="f_questao" value="n" checked>Não 
+
+        <input type="submit" name="f_enviar" value="Enviar" id="botaoenviar">
+    </form>
+</body>
+</html>
