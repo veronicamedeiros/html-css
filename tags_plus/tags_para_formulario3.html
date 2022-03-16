@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            margin-bottom: 10px;
+            border-radius: 3px;
+        }
+        form#f6 input{
+            border: 1px solid black;
+            width: 40px
+
+        }
+    </style>
+</head>
+<body>
+   <form name="fomulario1" action="#" method="get">
+       <label for="campo_hora">Hora:</label>
+            <input type="time" name="f_hora" id="campo_hora" min="09:00" max="18:00" required>
+        <br>
+        <label for="campo_data">Data:</label>
+            <input type="date" name="f_data" id="campo_data" min="2020-06-05" max="2022-03-30">
+        <br>
+            <input type="submit" name="f_agendar" value="Agendar">
+   </form> 
+        <br>
+   <form name="formulario2" action="#" method="get">
+       <label for="">Data e hora:</label>
+            <input type="datetime-local" name="f_dataehora">
+   </form>
+        <br>
+   <form name="formulario3" action="#" method="get">
+    <label for="">Semana:</label>
+         <input type="week" name="f_semana">
+</form>
+        <br>
+<form name="formulario4" action="#" method="get">
+    <label for="">Mês:</label>
+         <input type="month" name="f_mes">
+</form>
+<br>
+<form name="formulario5" action="#" method="get">
+    <label for="">Escolha uma cor:</label>
+        <input type="color" name="f_cor">
+        <br>
+    <label for="">Digite seu e-mail:</label>
+        <input type="email" name="f_email">
+        <input type="submit" name="f_enviar" value="Enviar">
+</form>
+
+<br>
+<form name="formulario6" action="#" method="get" id="f6">
+    
+         <input type="image" name="f_botaoimagem" src="imagens/enviar.png">
+</form>
+
+<form name="formulario7" action="#" method="get">
+    <label for="">Telefone:</label>
+        <input type="tel" name="f_tel" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx">
+        <input type="submit" name="f_enviar" value="Submeter"> 
+</form>
+<br>
+<form name="formulario8" action="#" method="get">
+    <label for="">Senha:</label>
+         <input type="password" name="f_senha" pattern="[a-zA-Z0-9]{6}">
+         <input type="submit" name="f_enviar" value="Submeter"> 
+</form>
+
+<form name="formulario9" action="#" method="get">
+    <label for="">Escolha um número</label>
+        <input type="number" name="f_numero" min="0" max="12">
+
+</form>
+<br>
+<form name="formulario10" action="#" method="get">
+    <label for="">Pesquisa</label>
+         <input type="search" name="f_pesquisa">
+         <br>
+         <input type="submit" name="f_enviar" value="Buscar">
+</form>
+</body>
+</html>
