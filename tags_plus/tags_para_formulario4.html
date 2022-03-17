@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: azure;
+            border: 1px solid grey;
+            padding: 10px;
+            width: 600px;
+            border-radius: 5px;
+        }
+        input{
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" enctype="multipart/form-data">
+        <label for="">Selecione o arquivo</label>
+        <br>
+            <input type="file" multiple accept=".jpg, .gig, .png">
+        <br>
+            <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="">
+        <label for="">Insira a url:</label>
+            <input type="url" placeholder="https://www.exemplo.com.br" pattern="https://.*" size="40">
+            <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="#" name="formulario3" method="get">
+        <select name="f3_selecaomateria" id="">
+            <option value="matematica">Matemática</option>
+            <option value="portugues">Português</option>
+            <option value="fisica">Física</option>
+            <option value="quimica">Química</option>
+            <option value="geografia">Geografia</option>
+        </select>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="#" name="formulario4" method="get">
+        <label for="">Selecione uma cor abaixo:</label>
+    <br>
+        <input list="f_cores" name="f_cor">
+            <datalist id="f_cores">
+                <option value="black">Preto</option>
+                <option value="red">Vermelho</option>
+                <option value="grey">Cinza</option>
+                <option value="purple">Roxo</option>
+                <option value="white">Branco</option>
+                <option value="pink">Rosa</option>
+                <option value="green">Verde</option>
+            </datalist>
+        <input type="submit" name="f_enviar" value="Escolher essa">
+    </form>
+</body>
+</html>
