@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: rgb(228, 227, 192);
+            width: 400px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 1px solid rgba(0, 0, 0, 0.329);
+        }
+        input{
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+      
+    </style>
+</head>
+<body>
+    <form action="#" name="formulario" method="get">
+    <br>
+        <fieldset>
+            <legend>Dados de contato</legend>
+                <label for="">Nome</label>
+                    <br>
+                    <input type="text" name="camponame" autofocus>
+                    <br>
+                <label for="">Telefone</label>
+                    <br>
+                    <input type="tel" disabled>
+            
+        </fieldset>
+    <br>
+        <fieldset>
+            <legend>Bens</legend>
+                <label for="carro">Possui carro?</label>
+                    <br>
+                    <input type="radio" name="f_carro" value="s" id="carro" >sim
+                    <input type="radio" name="f_carro" value="n" id="carro" checked>não
+                    <br>
+                <label for="casa">Possui casa própria?</label>
+                    <br>
+                    <input type="radio" name="f_casa" value="s" id="casa" checked>sim
+                    <input type="radio" name="f_casa" value="n" id="casa">não
+        <fieldset>
+            <legend>Comentário</legend>
+            <textarea name="f_comentario" id="" cols="30" rows="10" maxlength="150"></textarea>
+        </fieldset>    
+        </fieldset>
+    <br>
+            <input type="submit" name="f_enviar" value="Enviar">
+    </form>
+</body>
+</html>
