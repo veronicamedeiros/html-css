@@ -55,17 +55,14 @@
         }
         input.f_radio{
             margin-right: 5px;
-            margin-left: 15px;
+            margin-left: 25px;
         }
         ol{
             display: inline-block;
             margin-bottom: 7px;
-            margin-left: 20%;
+            margin-left: 12%;
             columns: 2;
         }
-        
-
-
     </style>
 </head>
 <body>
@@ -102,7 +99,7 @@
             <label for="job">Está trabalhando atualmente? </label>
                 <input type="radio" name="job" value="s" class="f_radio">Sim
                 <input type="radio" name="job" value="n" class="f_radio">Não
-    <br>
+            <br>
             <label for="formacao">Nível de escolaridade:</label>
                 <input list="f_formacao" name="f_formacao">
                     <datalist id="f_formacao">
@@ -113,25 +110,20 @@
                         <option value="5">Mestrado</option>
                         <option value="6">Doutorado</option>
                     </datalist>
-    <br>            
+            <br>            
                 <label for="areas" > Selecione as áreas de interesse:</label>
-                        <br>
-                
+                <br>              
                         <ol>
                             <li type="none"><input type="checkbox" name="coo" class="f_checkbox">Coordenador</li>
                             <li type="none"><input type="checkbox" name="sur" class="f_checkbox">Surpevisor</li>
-        
                             <li type="none"><input type="checkbox" name="con" class="f_checkbox">Consultor</li>
                             <li type="none"><input type="checkbox" name="es" class="f_checkbox">Especialista</li>
-                            
                             <li type="none"><input type="checkbox" name="es" class="f_checkbox">Estagiário</li>
                             <li type="none"><input type="checkbox" name="aux" class="f_checkbox">Auxiliar</li>
-                            
                             <li type="none"><input type="checkbox" name="op" class="f_checkbox">Operacional</li>
                             <li type="none"><input type="checkbox" name="as" class="f_checkbox">Assistente</li>
-                        </ol>
-                    
-                    <br>               
+                        </ol>                   
+            <br>               
                     <label for="curriculo">Anexe seu currículo em PDF:</label>
                     <input type="file" name="f_arquivo" accept=".pdf" id="file">             
     </fieldset>
