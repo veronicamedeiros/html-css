@@ -1,0 +1,101 @@
+@charset "UTF8";
+body{
+    
+    background-image: linear-gradient(to bottom, rgb(61, 4, 4), rgba(61, 4, 4, 0.781) );
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    *{
+        margin: 0px;
+        padding: 0px;
+    
+}
+nav{
+    margin:auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    
+    
+}
+nav a{
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+    padding: 6px;
+    
+    background-image: linear-gradient(to bottom, rgb(61, 4, 4), rgba(235, 92, 92, 0.507));
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 18px;
+
+}
+nav a:hover{
+    background-image: linear-gradient(to bottom, rgb(61, 4, 4), rgb(184, 13, 13));
+}
+h1{
+    color: white;
+    text-align: center;
+    margin: 40px;
+}
+article{
+    width: 60%;
+    background-color: beige;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.253);
+}
+div{
+    display: inline-block;
+    background-color: rgba(240, 221, 221, 0.938);
+    padding: 12px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.288);
+    border-style: double;
+
+    width: 25%;
+    height: 100%;
+    
+    color:rgb(31, 6, 3);
+    text-shadow: 1px 1px 1px rgba(15, 1, 1, 0.192);
+    font-size: bolder;
+    text-align: center;
+    
+}
+#divdaimagem{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%; 
+    margin-top: 10px;
+}
+img{
+    
+    display:inline-block;
+    width:  100%;
+    
+}
+main{
+    display: block;
+    width: 100%;
+    margin: auto;
+    
+   
+}
+footer{
+    background-color: rgb(34, 2, 2);
+    color: white;
+    padding: 1px;
+    text-align: right;
+}
