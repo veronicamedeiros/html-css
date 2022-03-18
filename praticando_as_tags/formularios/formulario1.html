@@ -61,6 +61,11 @@
             display: inline-block;
             margin-left: 20%;
         }
+        ol{
+            columns: 2;
+        }
+        
+
 
     </style>
 </head>
@@ -113,17 +118,19 @@
                 <label for="areas" > Selecione as áreas de interesse:</label>
                         <br>
                     <div>
-                        <input type="checkbox" name="coo" class="f_checkbox">Coordenador
-                        <input type="checkbox" name="sur" class="f_checkbox">Surpevisor
-                        <br>
-                        <input type="checkbox" name="con" class="f_checkbox">Consultor
-                        <input type="checkbox" name="es" class="f_checkbox">Especialista
-                        <br>
-                        <input type="checkbox" name="es" class="f_checkbox">Estagiário
-                        <input type="checkbox" name="aux" class="f_checkbox">Auxiliar
-                        <br>
-                        <input type="checkbox" name="op" class="f_checkbox">Operacional
-                        <input type="checkbox" name="as" class="f_checkbox">Assistente
+                        <ol>
+                            <li type="none"><input type="checkbox" name="coo" class="f_checkbox">Coordenador</li>
+                            <li type="none"><input type="checkbox" name="sur" class="f_checkbox">Surpevisor</li>
+        
+                            <li type="none"><input type="checkbox" name="con" class="f_checkbox">Consultor</li>
+                            <li type="none"><input type="checkbox" name="es" class="f_checkbox">Especialista</li>
+                            
+                            <li type="none"><input type="checkbox" name="es" class="f_checkbox">Estagiário</li>
+                            <li type="none"><input type="checkbox" name="aux" class="f_checkbox">Auxiliar</li>
+                            
+                            <li type="none"><input type="checkbox" name="op" class="f_checkbox">Operacional</li>
+                            <li type="none"><input type="checkbox" name="as" class="f_checkbox">Assistente</li>
+                        </ol>
                     </div>
                     <br>               
                     <label for="curriculo">Anexe seu currículo em PDF:</label>
