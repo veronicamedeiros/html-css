@@ -36,11 +36,17 @@
     <br>
     <form action="#" name="formulario3" method="get">
         <select name="f3_selecaomateria" id="">
-            <option value="matematica">Matemática</option>
-            <option value="portugues">Português</option>
-            <option value="fisica">Física</option>
-            <option value="quimica">Química</option>
-            <option value="geografia">Geografia</option>
+            <option value="--">--</option>
+            <optgroup label="Exatas">
+                <option value="matematica">Matemática</option>
+                <option value="fisica">Física</option>
+                <option value="quimica">Química</option>
+            </optgroup>
+            <optgroup label="Humanas">
+                <option value="portugues">Português</option>
+                <option value="geografia">Geografia</option>
+                <option value="historia">História</option>
+            </optgroup>
         </select>
         <input type="submit" value="Enviar">
     </form>
